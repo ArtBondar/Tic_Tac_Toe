@@ -206,6 +206,11 @@ namespace Tic_Tac_Toe_Server.Services
             }
             return res;
         }
+        /// <summary>
+        /// Create Lobby
+        /// </summary>
+        /// <param name="stream"> Stream </param>
+        /// <param name="client"> Client </param>
         static private void Create_Lobby(NetworkStream stream, Connected_Client client)
         {
             if (!String.IsNullOrWhiteSpace(client.Code) &&
